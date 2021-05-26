@@ -29,7 +29,7 @@ RUN echo 'blacklist dvb_usb_rtl28xxu' > /etc/modprobe.d/blacklist-dvb_usb_rtl28x
 
 FROM alpine:3.13
 
-LABEL version="1.0.0"
+LABEL version="1.0.1"
 
 ENV RTL_OPTS=""
 ENV LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib64:/usr/local/lib"
