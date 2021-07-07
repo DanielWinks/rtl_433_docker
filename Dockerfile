@@ -42,6 +42,6 @@ COPY --from=builder /usr/local/ /usr/local/
 COPY --from=builder /etc/modprobe.d/blacklist-dvb_usb_rtl28xxu.conf /etc/modprobe.d/blacklist-dvb_usb_rtl28xxu.conf
 COPY --from=builder /etc/udev/rules.d/rtl-sdr.rules /etc/udev/rules.d/rtl-sdr.rules
 
-# COPY rootfs /
+COPY rootfs /
 
 ENTRYPOINT [ "/bin/sh", "-c", "/entrypoint.sh" ]
